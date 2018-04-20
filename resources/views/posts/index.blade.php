@@ -1,6 +1,7 @@
 @extends('layouts.app')
 
 @section('content')
+    <a href="/posts/create"><button type="button" class="btn btn-primary float-right">Create</button></a>
     <h1>Posts</h1>
     @if(count($posts) >= 1)
         {{$posts->links()}}

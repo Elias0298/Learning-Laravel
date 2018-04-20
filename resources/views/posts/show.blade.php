@@ -3,11 +3,11 @@
 @section('content')
     <h1>{{$post->title}}</h1>
     <div>
-        {{$post->body}}
+        {!!$post->body!!}
     </div>
     <hr>
     <small>Written on {{$post->created_at}}</small>
     <br/>
     <br/>
-    <button type="button" class="btn btn-outline-primary btn-sm"><a href="/posts" class="btn btn-default gray">Go Back</a></button>
+    <a href="/posts"><button type="button" class="btn btn-primary" href="/posts">Go Back</button></a>
 @endsection
